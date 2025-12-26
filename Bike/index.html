@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>City Bikes Network Dashboard</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<header>
+		<h1 class="title">🚲 City Bikes Network Dashboard</h1>
+		<p>Powered by CityBikes API</p>
+	</header>
+
+	<section class="controls">
+		<input type="text" id="search" placeholder="Search city or network..." aria-label="Search by city or network" />
+		<button id="loadBtn">Show bike networks</button>
+	</section>
+
+	<div id="countrySummary" class="summary" aria-live="polite"></div>
+
+	<!-- message area for errors, info, loading -->
+	<div id="message" class="message" aria-live="polite"></div>
+
+	<section id="networks" class="card-grid"></section>
+
+	<section id="stations" class="card-grid"></section>
+
+	<footer>
+		<p> CityBikes API</p>
+	</footer>
+
+	<script src="script/app.js"></script>
+</body>
+</html>
